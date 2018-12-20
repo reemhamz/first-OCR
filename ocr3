@@ -1,0 +1,10 @@
+import pytesseract
+from PIL import Image
+img = Image.open ('quote.png')
+from pytesseract import image_to_string
+
+tesseract_cmd = r'C:\ Program Files (x86)\Tesseract-OCR\tesseract'
+pytesseract.pytesseract.tesseract_cmd =  r'C:\Program Files (x86)\Tesseract-OCR\tesseract'
+im = Image.open('C:/Users/ReemH/Box/[EDV] Operation ExO/1.0 Online Learning\ollie.png')
+text = image_to_string (im)
+print(text)
